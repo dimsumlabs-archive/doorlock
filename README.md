@@ -27,3 +27,9 @@ Power --------red--------> cut
   |
   `--------yellow-----junction-------> cut
                          `-----------> cut
+
+
+Transistor markings:
+IRF644
+I[diode symbol]R 618P
+M4 [circled]4F HD
