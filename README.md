@@ -1,7 +1,7 @@
 Dim Sum Labs Door Lock Project
 
 
-Pinout:
+RFID sensor board pinout:
 J1 - Green
 J2 - Green & White
 J3 - Blue
