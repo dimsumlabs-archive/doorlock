@@ -9,7 +9,7 @@ code at
 [github/enjrolas/OpenLock](https://github.com/enjrolas/OpenLock).
 
 Extended by [Martin Dengler](http://www.martindengler.com) on
-[github/mdengler/dsl-doorlock](https://github.com/mdengler/dsl-doorlock)
+[github/dimsumlabs/doorlock](https://github.com/dimsumlabs/doorlock)
 to be specific to [Dim Sum Labs in Hong Kong](http://dimsumlabs.com)
 and updated for the new installation location.  We lose the generic
 open door lock goal, and gain yet another working door lock example to
