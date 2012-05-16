@@ -69,3 +69,16 @@ Transistor's markings:
     IRF644
     I[diode symbol]R 618P
     M4 [circled]4F HD
+
+
+
+Proposed new inputs / outputs
+-------------------------
+
+Arduino connected to:
+
+S1) "Door-closed" switch (NC)
+S2) "Key-in-lock" switch (NO)
+S3) "Deadbolt-home" switch (NC)
+S4) "Knobbolt-home" switch (NC)
+S5) "Lock opened" switch (NO)

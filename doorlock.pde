@@ -18,9 +18,7 @@
 #include <SL018.h>
 
 
-//  #define DEBUG 1     //uncomment this line if you want to play with the arduino in debug mode,
-                        //but it'll BREAK the system if you try to use it with the computer-side
-                        //software in debug mode
+#define DEBUG 1     //uncomment this line if you want to play with the arduino in debug mode,
 
 
 #define NUM_CARDS 50  //total number of authorized cards we'll store
@@ -189,7 +187,7 @@ boolean waitForCard(int timeout)
   // loop until we detect a tag or we timeout
   while(!rfid.available()&&(millis()-waitTimer<timeout));
   // print tag id
-  tagString=rfid.getTagString();
+  tagString=(char *)rfid.getTagString();
   return rfid.available();
 }
 
