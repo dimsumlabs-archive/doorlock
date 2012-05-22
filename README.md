@@ -34,7 +34,7 @@ Details
 
 Pinouts:
 
-RFID sensor board                        Arduino
+RFID sensor board <====================> Arduino
 
     J1 - Green            <----    ---->  D7
     J2 - Green & White    <----    ---->  D6
