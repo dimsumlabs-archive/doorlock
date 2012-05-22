@@ -32,36 +32,46 @@ with making.
 Details
 -------
 
-RFID sensor board pinout:
+Pinouts:
 
-    J1 - Green
-    J2 - Green & White
-    J3 - Blue
-    J4 - Blue & White
-    J5 - Orange
+RFID sensor board                        Arduino
+
+    J1 - Green            <----    ---->  D7
+    J2 - Green & White    <----    ---->  D6
+    J3 - Blue             <----RJ45---->  D5
+    J4 - Blue & White     <----    ---->  D4
+    J5 - Orange           <----    ---->  D3
+
 
 
 Wiring:
-
-
-Current state of affairs: needs rewiring:
-
-    Lock ----red----> cut
-      |
-      | yellow
-      |            ,----------------\
-      |   cut <-------=+-----+      |
-      |                | Tra |      Z
-      `---------------=| nsi |      Z resistor - Gray Orange Blue Brown
-                       | str |      Z
-          cut <-------=+-----+      |
-                  `-----------------/
-
-
-    Power --------red--------------------> cut
-      |
-      `--------yellow-----junction-------> cut
-                             `-----------> cut
+                                                                   ||
+                                                                  Door
+                                                                   ||
+  +12V                                                             ||
+   |                                                               ||
+   |----yellow---------------------------+---------+               ||    +--------+
+   |                                     |         |==--- RJ45 --------==| RFID   |
+   |                                     | Arduino |==/            ||  \=| reader |
+   `----red----->  +----+                |         |               ||    +--------+
+                   |Lock|                +---------+               ||
+                   +----+                   |                      ||
+                      |                     |                      ||
+                      |                  ---+                      ||
+                       \ -------        /                          ||\
+                        | Trans |-------                           |||
+                        | istor |      |                           ||/
+                       / -------       Z                           ||
+                      |                Z resistor                  ||
+                      |                Z  Gray, Orange,            ||
+                      |                |  Blue Brown               ||
+    ------------------+----------------/                           ||
+    |                                                              ||
+    |                                                              ||
+  -----                                                            ||
+   ---                                                             ||
+                                                                   ||
+------------------------------------------------------------------------------------------
 
 
 Transistor's markings:
